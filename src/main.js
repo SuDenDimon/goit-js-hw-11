@@ -12,7 +12,6 @@ const refs = {
     gallery: document.querySelector(".gallery"),
     loader: document.querySelector('.loader'),
 }
-// console.log(refs.gallery);
 
 function hideLoader() {
     refs.loader.classList.add("hidden");
@@ -40,7 +39,6 @@ function onFormSubmit(e) {
         return;
     }
         showLoader();
-    // console.log(getImage(inputValue));
     
     getImage(inputValue).then(data => { 
 
